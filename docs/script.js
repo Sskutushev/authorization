@@ -100,10 +100,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Обновление статуса
         if (ready) {
-            statusMessage.textContent = "Ready to continue";
+            statusMessage.textContent = "ГОТОВО К ПРОДОЛЖЕНИЮ";
             statusMessage.className = 'status-message success';
         } else {
-            statusMessage.textContent = "Fields cannot be empty";
+            statusMessage.textContent = "ПОЛЯ НЕ МОГУТ БЫТЬ ПУСТЫМИ";
             statusMessage.className = 'status-message error';
         }
 
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loginButton.addEventListener('click', (e) => {
         if (!loginButton.disabled) {
             e.preventDefault();
-            alert('Authentication successful. Welcome to the Neo-Grid!');
+            alert('Аутентификация прошла успешно. Добро пожаловать в Neo-Grid!');
         }
     });
 });
