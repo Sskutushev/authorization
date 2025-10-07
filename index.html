@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo-Login System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="starfield"></canvas> 
+
+    <div class="login-container">
+        <div class="glitch-wrapper" id="glitch-wrapper">
+            <h1 class="neon-title">LOGIN</h1>
+            <p id="status-message" class="status-message error">Fields cannot be empty</p>
+            
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">USERNAME</label>
+                    <input type="text" id="username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">PASSWORD</label>
+                    <div class="password-display">
+                        <span id="password-mask"></span>
+                        <input type="text" id="password" class="hidden-password-input" required maxlength="20">
+                    </div>
+                </div>
+
+                <button id="login-button" type="submit" disabled>LOGIN</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
